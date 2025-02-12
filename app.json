@@ -1,29 +1,16 @@
 {
-    // Name of the Azure Container App
     "name": "azure-container-app-demo-python",
-
     "env": {
         "DD_API_KEY": {
-            // Datadog API key for monitoring (must be provided)
             "description": "Your Datadog's API KEY (see: https://docs.datadoghq.com/account_management/api-app-keys)",
             "required": true
         }
     },
-
     "options": {
-        // Allow unauthenticated access (set to false for security)
         "allow-unauthenticated": true,
-
-        // Memory allocation for the container (512 MB)
         "memory": "512Mi",
-
-        // CPU allocation (1 virtual CPU)
         "cpu": "1",
-
-        // Expose the application on port 80
         "port": 80,
-
-        // Disable HTTP/2 (use HTTP/1.1 instead)
         "http2": false
     }
 }
