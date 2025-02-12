@@ -1,2 +1,5 @@
-Flask==3.1.0
+# Flask: Web framework for building APIs and web apps 
+Flask==3.1.0 
+
+# ddtrace: Enables Datadog APM to trace requests and monitor performance
 ddtrace==2.18.0
